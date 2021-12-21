@@ -1,0 +1,6 @@
+framework module Pods_cocoa_watch_WatchKit_Extension {
+  umbrella header "Pods-cocoa-watch WatchKit Extension-umbrella.h"
+
+  export *
+  module * { export * }
+}

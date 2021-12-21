@@ -1,0 +1,6 @@
+framework module Pods_cocoa_tv {
+  umbrella header "Pods-cocoa-tv-umbrella.h"
+
+  export *
+  module * { export * }
+}

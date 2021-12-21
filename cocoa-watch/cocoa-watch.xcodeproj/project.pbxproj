@@ -1,0 +1,749 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		377CCDE4D7ADE4D6680B78F7 /* Pods_cocoa_watch_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1FBF2571B5EE5C6FE286D01 /* Pods_cocoa_watch_WatchKit_Extension.framework */; };
+		7D0C7D3E183FA91D9E589C83 /* Pods_cocoa_watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2708164EC5F0E7AD2BDCB91 /* Pods_cocoa_watch.framework */; };
+		D543409D2772100F0036719F /* cocoa-watch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D543409C2772100F0036719F /* cocoa-watch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D54340A2277210110036719F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D54340A1277210110036719F /* Assets.xcassets */; };
+		D54340A8277210120036719F /* cocoa-watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D54340A7277210120036719F /* cocoa-watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D54340AD277210120036719F /* cocoa_watchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54340AC277210120036719F /* cocoa_watchApp.swift */; };
+		D54340AF277210120036719F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54340AE277210120036719F /* ContentView.swift */; };
+		D54340B1277210120036719F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54340B0277210120036719F /* NotificationController.swift */; };
+		D54340B3277210120036719F /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54340B2277210120036719F /* NotificationView.swift */; };
+		D54340B5277210120036719F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54340B4277210120036719F /* ComplicationController.swift */; };
+		D54340B7277210130036719F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D54340B6277210130036719F /* Assets.xcassets */; };
+		D54340BA277210130036719F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D54340B9277210130036719F /* Preview Assets.xcassets */; };
+		D54340CB277212C30036719F /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = D54340CA277212C30036719F /* Auth0.plist */; };
+		D54340CC277212C30036719F /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = D54340CA277212C30036719F /* Auth0.plist */; };
+		D54340CD277212C30036719F /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = D54340CA277212C30036719F /* Auth0.plist */; };
+		F384B0180CF15D5FBAFD9251 /* Pods_cocoa_watch_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7AA2C2EF170CEC4B7376C6 /* Pods_cocoa_watch_WatchKit_App.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D543409E2772100F0036719F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D54340922772100F0036719F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D543409B2772100F0036719F;
+			remoteInfo = "cocoa-watch WatchKit App";
+		};
+		D54340A9277210120036719F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D54340922772100F0036719F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D54340A6277210120036719F;
+			remoteInfo = "cocoa-watch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D54340C2277210130036719F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D54340A8277210120036719F /* cocoa-watch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D54340C6277210130036719F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D543409D2772100F0036719F /* cocoa-watch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		07523D26F598E2883010C161 /* Pods-cocoa-watch WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cocoa-watch WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-cocoa-watch WatchKit Extension/Pods-cocoa-watch WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		11F9103F9A90F6C9C37F4CC4 /* Pods-cocoa-watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cocoa-watch.release.xcconfig"; path = "Target Support Files/Pods-cocoa-watch/Pods-cocoa-watch.release.xcconfig"; sourceTree = "<group>"; };
+		6007BF9CD602DD367C52F1C7 /* Pods-cocoa-watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cocoa-watch.debug.xcconfig"; path = "Target Support Files/Pods-cocoa-watch/Pods-cocoa-watch.debug.xcconfig"; sourceTree = "<group>"; };
+		69CCE092565898EF0E07EA71 /* Pods-cocoa-watch WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cocoa-watch WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-cocoa-watch WatchKit Extension/Pods-cocoa-watch WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		A109DDADFDB11C2059A6BD39 /* Pods-cocoa-watch WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cocoa-watch WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-cocoa-watch WatchKit App/Pods-cocoa-watch WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		C2708164EC5F0E7AD2BDCB91 /* Pods_cocoa_watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cocoa_watch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC7AA2C2EF170CEC4B7376C6 /* Pods_cocoa_watch_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cocoa_watch_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1FBF2571B5EE5C6FE286D01 /* Pods_cocoa_watch_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cocoa_watch_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D54340982772100F0036719F /* cocoa-watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cocoa-watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D543409C2772100F0036719F /* cocoa-watch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cocoa-watch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D54340A1277210110036719F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D54340A7277210120036719F /* cocoa-watch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "cocoa-watch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D54340AC277210120036719F /* cocoa_watchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cocoa_watchApp.swift; sourceTree = "<group>"; };
+		D54340AE277210120036719F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D54340B0277210120036719F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D54340B2277210120036719F /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		D54340B4277210120036719F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		D54340B6277210130036719F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D54340B9277210130036719F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D54340BB277210130036719F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D54340BC277210130036719F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		D54340CA277212C30036719F /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
+		FA0FA300391F471C12EDBCC0 /* Pods-cocoa-watch WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cocoa-watch WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-cocoa-watch WatchKit App/Pods-cocoa-watch WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		363DB165C0A6FCDACDE02D04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F384B0180CF15D5FBAFD9251 /* Pods_cocoa_watch_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8176405AD1D46887DFFA84EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D0C7D3E183FA91D9E589C83 /* Pods_cocoa_watch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D54340A4277210120036719F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				377CCDE4D7ADE4D6680B78F7 /* Pods_cocoa_watch_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		106FED57EDEDA5CFCB09FCAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6007BF9CD602DD367C52F1C7 /* Pods-cocoa-watch.debug.xcconfig */,
+				11F9103F9A90F6C9C37F4CC4 /* Pods-cocoa-watch.release.xcconfig */,
+				FA0FA300391F471C12EDBCC0 /* Pods-cocoa-watch WatchKit App.debug.xcconfig */,
+				A109DDADFDB11C2059A6BD39 /* Pods-cocoa-watch WatchKit App.release.xcconfig */,
+				69CCE092565898EF0E07EA71 /* Pods-cocoa-watch WatchKit Extension.debug.xcconfig */,
+				07523D26F598E2883010C161 /* Pods-cocoa-watch WatchKit Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D54340912772100F0036719F = {
+			isa = PBXGroup;
+			children = (
+				D54340CA277212C30036719F /* Auth0.plist */,
+				D54340A02772100F0036719F /* cocoa-watch WatchKit App */,
+				D54340AB277210120036719F /* cocoa-watch WatchKit Extension */,
+				D54340992772100F0036719F /* Products */,
+				106FED57EDEDA5CFCB09FCAB /* Pods */,
+				DAB4492DDEABFEAEC912A355 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D54340992772100F0036719F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D54340982772100F0036719F /* cocoa-watch.app */,
+				D543409C2772100F0036719F /* cocoa-watch WatchKit App.app */,
+				D54340A7277210120036719F /* cocoa-watch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D54340A02772100F0036719F /* cocoa-watch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D54340A1277210110036719F /* Assets.xcassets */,
+			);
+			path = "cocoa-watch WatchKit App";
+			sourceTree = "<group>";
+		};
+		D54340AB277210120036719F /* cocoa-watch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D54340AC277210120036719F /* cocoa_watchApp.swift */,
+				D54340AE277210120036719F /* ContentView.swift */,
+				D54340B0277210120036719F /* NotificationController.swift */,
+				D54340B2277210120036719F /* NotificationView.swift */,
+				D54340B4277210120036719F /* ComplicationController.swift */,
+				D54340B6277210130036719F /* Assets.xcassets */,
+				D54340BB277210130036719F /* Info.plist */,
+				D54340BC277210130036719F /* PushNotificationPayload.apns */,
+				D54340B8277210130036719F /* Preview Content */,
+			);
+			path = "cocoa-watch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		D54340B8277210130036719F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D54340B9277210130036719F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DAB4492DDEABFEAEC912A355 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2708164EC5F0E7AD2BDCB91 /* Pods_cocoa_watch.framework */,
+				CC7AA2C2EF170CEC4B7376C6 /* Pods_cocoa_watch_WatchKit_App.framework */,
+				D1FBF2571B5EE5C6FE286D01 /* Pods_cocoa_watch_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D54340972772100F0036719F /* cocoa-watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D54340C7277210130036719F /* Build configuration list for PBXNativeTarget "cocoa-watch" */;
+			buildPhases = (
+				9C6DB87128B12D57296BCC2B /* [CP] Check Pods Manifest.lock */,
+				D54340962772100F0036719F /* Resources */,
+				D54340C6277210130036719F /* Embed Watch Content */,
+				8176405AD1D46887DFFA84EA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D543409F2772100F0036719F /* PBXTargetDependency */,
+			);
+			name = "cocoa-watch";
+			productName = "cocoa-watch";
+			productReference = D54340982772100F0036719F /* cocoa-watch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		D543409B2772100F0036719F /* cocoa-watch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D54340C3277210130036719F /* Build configuration list for PBXNativeTarget "cocoa-watch WatchKit App" */;
+			buildPhases = (
+				80F6A28F83BCEC85FF8A177E /* [CP] Check Pods Manifest.lock */,
+				D543409A2772100F0036719F /* Resources */,
+				D54340C2277210130036719F /* Embed App Extensions */,
+				363DB165C0A6FCDACDE02D04 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D54340AA277210120036719F /* PBXTargetDependency */,
+			);
+			name = "cocoa-watch WatchKit App";
+			productName = "cocoa-watch WatchKit App";
+			productReference = D543409C2772100F0036719F /* cocoa-watch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D54340A6277210120036719F /* cocoa-watch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D54340BF277210130036719F /* Build configuration list for PBXNativeTarget "cocoa-watch WatchKit Extension" */;
+			buildPhases = (
+				AB149FF2061591E907637D60 /* [CP] Check Pods Manifest.lock */,
+				D54340A3277210120036719F /* Sources */,
+				D54340A4277210120036719F /* Frameworks */,
+				D54340A5277210120036719F /* Resources */,
+				1E15D33B4230972F609EE6FE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cocoa-watch WatchKit Extension";
+			productName = "cocoa-watch WatchKit Extension";
+			productReference = D54340A7277210120036719F /* cocoa-watch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D54340922772100F0036719F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					D54340972772100F0036719F = {
+						CreatedOnToolsVersion = 13.2;
+					};
+					D543409B2772100F0036719F = {
+						CreatedOnToolsVersion = 13.2;
+					};
+					D54340A6277210120036719F = {
+						CreatedOnToolsVersion = 13.2;
+					};
+				};
+			};
+			buildConfigurationList = D54340952772100F0036719F /* Build configuration list for PBXProject "cocoa-watch" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D54340912772100F0036719F;
+			productRefGroup = D54340992772100F0036719F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D54340972772100F0036719F /* cocoa-watch */,
+				D543409B2772100F0036719F /* cocoa-watch WatchKit App */,
+				D54340A6277210120036719F /* cocoa-watch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D54340962772100F0036719F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D54340CB277212C30036719F /* Auth0.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D543409A2772100F0036719F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D54340A2277210110036719F /* Assets.xcassets in Resources */,
+				D54340CC277212C30036719F /* Auth0.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D54340A5277210120036719F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D54340BA277210130036719F /* Preview Assets.xcassets in Resources */,
+				D54340CD277212C30036719F /* Auth0.plist in Resources */,
+				D54340B7277210130036719F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E15D33B4230972F609EE6FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cocoa-watch WatchKit Extension/Pods-cocoa-watch WatchKit Extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cocoa-watch WatchKit Extension/Pods-cocoa-watch WatchKit Extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cocoa-watch WatchKit Extension/Pods-cocoa-watch WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80F6A28F83BCEC85FF8A177E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cocoa-watch WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C6DB87128B12D57296BCC2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cocoa-watch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB149FF2061591E907637D60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cocoa-watch WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D54340A3277210120036719F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D54340B1277210120036719F /* NotificationController.swift in Sources */,
+				D54340AF277210120036719F /* ContentView.swift in Sources */,
+				D54340B5277210120036719F /* ComplicationController.swift in Sources */,
+				D54340AD277210120036719F /* cocoa_watchApp.swift in Sources */,
+				D54340B3277210120036719F /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D543409F2772100F0036719F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D543409B2772100F0036719F /* cocoa-watch WatchKit App */;
+			targetProxy = D543409E2772100F0036719F /* PBXContainerItemProxy */;
+		};
+		D54340AA277210120036719F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D54340A6277210120036719F /* cocoa-watch WatchKit Extension */;
+			targetProxy = D54340A9277210120036719F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D54340BD277210130036719F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D54340BE277210130036719F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D54340C0277210130036719F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69CCE092565898EF0E07EA71 /* Pods-cocoa-watch WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"cocoa-watch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 737Y7L95S3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "cocoa-watch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "cocoa-watch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.auth0.cocoa-watch.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		D54340C1277210130036719F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07523D26F598E2883010C161 /* Pods-cocoa-watch WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"cocoa-watch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 737Y7L95S3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "cocoa-watch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "cocoa-watch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.auth0.cocoa-watch.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		D54340C4277210130036719F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA0FA300391F471C12EDBCC0 /* Pods-cocoa-watch WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 737Y7L95S3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = cocoa_watch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "cocoa-watch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.auth0.cocoa-watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		D54340C5277210130036719F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A109DDADFDB11C2059A6BD39 /* Pods-cocoa-watch WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 737Y7L95S3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = cocoa_watch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "cocoa-watch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.auth0.cocoa-watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		D54340C8277210130036719F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6007BF9CD602DD367C52F1C7 /* Pods-cocoa-watch.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 737Y7L95S3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.auth0.cocoa-watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D54340C9277210130036719F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11F9103F9A90F6C9C37F4CC4 /* Pods-cocoa-watch.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 737Y7L95S3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.auth0.cocoa-watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D54340952772100F0036719F /* Build configuration list for PBXProject "cocoa-watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D54340BD277210130036719F /* Debug */,
+				D54340BE277210130036719F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D54340BF277210130036719F /* Build configuration list for PBXNativeTarget "cocoa-watch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D54340C0277210130036719F /* Debug */,
+				D54340C1277210130036719F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D54340C3277210130036719F /* Build configuration list for PBXNativeTarget "cocoa-watch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D54340C4277210130036719F /* Debug */,
+				D54340C5277210130036719F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D54340C7277210130036719F /* Build configuration list for PBXNativeTarget "cocoa-watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D54340C8277210130036719F /* Debug */,
+				D54340C9277210130036719F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D54340922772100F0036719F /* Project object */;
+}

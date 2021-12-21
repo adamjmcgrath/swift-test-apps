@@ -1,0 +1,6 @@
+framework module Pods_cocoa_multi__macOS_ {
+  umbrella header "Pods-cocoa-multi (macOS)-umbrella.h"
+
+  export *
+  module * { export * }
+}
