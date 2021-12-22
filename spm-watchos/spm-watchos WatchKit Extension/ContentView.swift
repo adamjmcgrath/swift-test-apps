@@ -7,15 +7,20 @@
 
 import SwiftUI
 import Auth0
+import Combine
 
 let credentialsManager = CredentialsManager(authentication: Auth0.authentication())
+
+let at = "at"
+
+let user = "user"
 
 func asyncAwait() async {
     do {
         let user = try await Auth0
-            .users(token: "AT")
+            .users(token: at)
             .logging(enabled: true)
-            .get("USERID")
+            .get(user)
             .start()
         print("User with metadata: \(user)")
     } catch {
@@ -34,10 +39,41 @@ func asyncRevoke() async {
 
 
 struct ContentView: View {
+    @State var cancellables = Set<AnyCancellable>()
+    
+    func combineReq() {
+        Auth0
+            .users(token: at)
+            .logging(enabled: true)
+            .get(user)
+            .publisher()
+            .sink(receiveCompletion: { completion in
+                if case .failure(let error) = completion {
+                    print("Failed with \(error)")
+                }
+            }, receiveValue: { user in
+                print("User with metadata: \(user)")
+            }).store(in: &cancellables)
+    }
+    
+    func combineRevoke() {
+        credentialsManager
+            .revoke()
+            .sink(receiveCompletion: { completion in
+                if case .failure(let error) = completion {
+                    print("Failed with \(error)")
+                }
+                print("Success")
+            }, receiveValue: { _ in })
+            .store(in: &cancellables)
+    }
+    
     var body: some View {
         VStack(spacing: 10) {
             Button("async/await request") { Task.init { await asyncAwait() } }
             Button("async/await revoke") { Task.init { await asyncRevoke() } }
+            Button("combine request") { combineReq() }
+            Button("combine revoke") { combineRevoke() }
         }.buttonStyle(BlueButton())
     }
 }
