@@ -48,6 +48,7 @@ func creds() {
     }
 }
 
+@available(iOS 15.0.0, *)
 func credsAsync() async {
     do {
         let credentials = try await credentialsManager.credentials()
@@ -86,6 +87,7 @@ func concurrentRefresh() {
 }
 
 
+@available(iOS 15.0.0, *)
 func asyncAwait() async {
     do {
         let credentials = try await credentialsManager.credentials()
@@ -100,6 +102,7 @@ func asyncAwait() async {
     }
 }
 
+@available(iOS 15.0.0, *)
 func asyncLogin() async {
     Task.init { @MainActor in
         do {
@@ -116,6 +119,7 @@ func asyncLogin() async {
 }
 
 
+@available(iOS 15.0.0, *)
 func asyncClear() async {
     Task.init { @MainActor in
         do {
@@ -129,6 +133,7 @@ func asyncClear() async {
     }
 }
 
+@available(iOS 15.0.0, *)
 func asyncRevoke() async {
     do {
         try await credentialsManager.revoke()
@@ -141,6 +146,7 @@ func asyncRevoke() async {
 struct ContentView: View {
     @State var cancellables = Set<AnyCancellable>()
     
+    @available(iOS 15.0.0, *)
     func combineReq() async {
         do {
             let credentials = try await credentialsManager.credentials()
@@ -214,27 +220,34 @@ struct ContentView: View {
             }, receiveValue: { _ in })
             .store(in: &cancellables)
     }
-    
+
     var body: some View {
-        VStack(spacing: 10) {
-            Group {
-                Button("Login") { login() }
-                Button("Get credentials") { creds() }
-                Button("concurrency test") { concurrentRefresh() }
-                Button("async/await request") { Task.init { await asyncAwait() } }
-                Button("async/await login") { Task.init { await asyncLogin() } }
-                Button("async/await clear") { Task.init { await asyncClear() } }
-                Button("async/await credentials") { Task.init { await credsAsync() } }
-                Button("async/await revoke") { Task.init { await asyncRevoke() } }
-                Button("combine request") { Task.init { await combineReq() } }
-                Button("combine login") { combineLogin() }
+        if #available(iOS 15.0.0, *) {
+            ScrollView {
+                VStack(spacing: 10) {
+                    Group {
+                        Button("Login") { login() }
+                        Button("Get credentials") { creds() }
+                        Button("concurrency test") { concurrentRefresh() }
+                        Button("async/await request") { Task.init { await asyncAwait() } }
+                        Button("async/await login") { Task.init { await asyncLogin() } }
+                        Button("async/await clear") { Task.init { await asyncClear() } }
+                        Button("async/await credentials") { Task.init { await credsAsync() } }
+                        Button("async/await revoke") { Task.init { await asyncRevoke() } }
+                        Button("combine request") { Task.init { await combineReq() } }
+                        Button("combine login") { combineLogin() }
+                    }
+                    Group {
+                        Button("combine get creds") { combineCreds() }
+                        Button("combine clear creds") { combineClear() }
+                        Button("combine revoke creds") { combineRevoke() }
+                    }
+                }.buttonStyle(BlueButton())
             }
-            Group {
-                Button("combine get creds") { combineCreds() }
-                Button("combine clear creds") { combineClear() }
-                Button("combine revoke creds") { combineRevoke() }
-            }
-        }.buttonStyle(BlueButton())
+        } else {
+            // Fallback on earlier versions
+        }
+        
     }
 }
 
