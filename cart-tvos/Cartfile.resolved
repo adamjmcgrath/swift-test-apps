@@ -1,0 +1,3 @@
+github "auth0/Auth0.swift" "94787c3015f246a992bde877c27c197ad38df655"
+github "auth0/JWTDecode.swift" "2.6.3"
+github "auth0/SimpleKeychain" "0.12.5"
